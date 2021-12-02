@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLOCK APP JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- clock header and timer -->
+      <div class="clock-header">
+        <div class="logo">
+          <img src="./img/clock_logo@2x.png" alt="clock logo" />
+        </div>
+        <div class="timer">
+          <div class="time">
+            <div class="box box1"><p>TIME</p></div>
+            <div class="box box2">
+              <div id="hr" class="f3">10</div>
+              <span>hours</span>
+            </div>
+            <div class="dots">
+              <div class="dot-1"></div>
+              <div class="dot-2"></div>
+            </div>
+            <div class="box box3">
+              <div id="min" class="f3">45</div>
+              <span>mins</span>
+            </div>
+            <div class="dots">
+              <div class="dot-1"></div>
+              <div class="dot-2"></div>
+            </div>
+            <div class="box box4">
+              <div id="sec" class="f3">01</div>
+              <span>secs</span>
+            </div>
+            <div class="box box5"><p>AM</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- set alarms section -->
+      <section class="set-time">
+        <div class="mySchedule">
+          <div class="set-schedules">
+            <div class="schedule-grid">
+              <div class="morn">
+                <img src="./img/wake_up.svg" alt="" />
+                <p>set wake up time</p>
+                <select name="" id="">
+                  <option></option>
+                </select>
+              </div>
+              <div class="after">
+                <img src="./img/lunch_time.svg" alt="" />
+                <p>set lunch time</p>
+                <select name="" id="">
+                  <option></option>
+                </select>
+              </div>
+              <div class="night">
+                <img src="./img/nap_time.svg" alt="" />
+                <p>set nap time</p>
+                <select name="" id="">
+                  <option></option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button class="set-time-btn">Set Time</button>
+          <div class="final-schedule hidden"></div>
+        </div>
+        <div class="dynamic-img-block">
+          <div class="dynamic-img"></div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

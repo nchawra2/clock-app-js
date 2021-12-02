@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.f3 {
+  font-size: 30px;
+}
+
+body {
+  background-color: #3d087b;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.clock-header {
+  height: 130px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 204px;
+  height: 77px;
+}
+
+.timer {
+  background-color: white;
+  width: 536px;
+  height: 130px;
+  border-radius: 10px;
+}
+
+.time {
+  width: 458px;
+  height: 90px;
+  margin: 20px 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  width: 82px;
+  height: 90px;
+}
+
+.box1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 p {
+  width: 46px;
+  height: 26px;
+  color: #3d087b;
+  font-size: 20px;
+}
+
+.dots {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.dot-1,
+.dot-2 {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #3d087b;
+}
+
+.box2,
+.box3,
+.box4 {
+  background: transparent url("img/timeline.svg") 0% 0% no-repeat;
+  color: #8a11bf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box5 {
+  background: url("./img/AM_svg.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box5 p {
+  width: 48px;
+  height: 43px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.set-time {
+  min-height: 490px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mySchedule {
+  height: 450px;
+  width: 580px;
+  margin: 5px;
+}
+
+.dynamic-img-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dynamic-img {
+  width: 526px;
+  height: 464px;
+  margin: 5px;
+  background: white url("./img/lunch_image.svg");
+  border-radius: 5px;
+}
+
+.set-schedules {
+  width: 566px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 45px);
+  padding: 30px 30px 30px 30px;
+  row-gap: 40px;
+  color: #3d087b;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.schedule-grid div {
+  display: grid;
+  grid-template-columns: 1fr 4fr 7fr;
+  align-items: center;
+  column-gap: 20px;
+}
+
+select {
+  width: 281px;
+  height: 45px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ededed;
+  border-radius: 4px;
+  outline: none;
+  letter-spacing: 0.25px;
+  color: #3d087bde;
+  font-size: 14px;
+}
+
+.set-time-btn {
+  background: transparent
+    linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%)
+    0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  width: 299px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  font: normal normal 600 24px/38px Manrope;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.final-schedule {
+  width: 566px;
+  height: 90px;
+  background-color: #6a419a;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.hidden {
+  visibility: hidden;
+}
