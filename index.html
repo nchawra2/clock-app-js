@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CLOCK APP JS</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
   </head>
   <body>
     <div class="container">
@@ -18,7 +19,7 @@
           <div class="time">
             <div class="box box1"><p>TIME</p></div>
             <div class="box box2">
-              <div id="hr" class="f3">10</div>
+              <div id="hr" class="f3"></div>
               <span>hours</span>
             </div>
             <div class="dots">
@@ -26,7 +27,7 @@
               <div class="dot-2"></div>
             </div>
             <div class="box box3">
-              <div id="min" class="f3">45</div>
+              <div id="min" class="f3"></div>
               <span>mins</span>
             </div>
             <div class="dots">
@@ -34,10 +35,10 @@
               <div class="dot-2"></div>
             </div>
             <div class="box box4">
-              <div id="sec" class="f3">01</div>
+              <div id="sec" class="f3"></div>
               <span>secs</span>
             </div>
-            <div class="box box5"><p>AM</p></div>
+            <div class="box box5"><p id="phase">AM</p></div>
           </div>
         </div>
       </div>
@@ -50,31 +51,37 @@
               <div class="morn">
                 <img src="./img/wake_up.svg" alt="" />
                 <p>set wake up time</p>
-                <select name="" id="">
-                  <option></option>
+                <select id="wake-up-time">
+                  <option value="">default time</option>
+                  <option value="16">4pm-5pm</option>
+                  <option value="16">5pm-6pm</option>
                 </select>
               </div>
               <div class="after">
                 <img src="./img/lunch_time.svg" alt="" />
                 <p>set lunch time</p>
-                <select name="" id="">
-                  <option></option>
+                <select name="" id="lunch-time">
+                  <option value="">default time</option>
+                  <option value="17">5pm-6pm</option>
+                  <option value="17">7pm-8pm</option>
                 </select>
               </div>
               <div class="night">
                 <img src="./img/nap_time.svg" alt="" />
                 <p>set nap time</p>
-                <select name="" id="">
-                  <option></option>
+                <select name="" id="nap-time">
+                  <option value="">default time</option>
+                  <option value="22">10pm-11pm</option>
+                  <option value="22">11pm-12pm</option>
                 </select>
               </div>
             </div>
           </div>
           <button class="set-time-btn">Set Time</button>
           <div class="final-schedule hidden">
-            <p>wake up time: </p>
-            <p>lunch time: </p>
-            <p>nap time: </p>
+            <p>wake up time: <span id="wakeUp"></span></p>
+            <p>lunch time: <span id="lunch"></span></p>
+            <p>nap time: <span id="nap"></span></p>
           </div>
         </div>
         <div class="dynamic-img-block">
