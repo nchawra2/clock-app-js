@@ -1,64 +1,67 @@
 @media (max-width: 420px) {
-    .clock-header {
-        flex-direction: column;
-        row-gap: 10px;
-      }
-    
-      .timer {
-        width: 360px;
-      }
-      
-      .time {
-        width: 320px;
-        margin: 5px;
-      }
-      
-      .box {
-        width: 72px;
-        height: 72px;
-        margin-left: 5px;
-      }
+  .clock-header {
+    flex-direction: column;
+    row-gap: 10px;
+  }
 
-      .set-time {
-        flex-direction: column;
-        margin-top: 100px;
-      }
+  .timer {
+    width: 360px;
+  }
 
-      .dynamic-img-block {
-          align-items: center;
-          margin-top: 50px;
-      }
+  .time {
+    width: 320px;
+    margin: 5px;
+  }
 
-      .dynamic-img {
-        width: 346px;
-        height: 364px;
-      }
-      
-      .set-schedules {
-        width: 356px;
-      }
-      
-      .schedule-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 45px);
-        padding: 30px 30px 30px 30px;
-        row-gap: 40px;
-        color: #3d087b;
-        font-size: 18px;
-        text-transform: capitalize;
-      }
+  .box {
+    width: 72px;
+    height: 72px;
+    margin-left: 5px;
+  }
 
-      .schedule-grid div {
-        grid-template-columns: 1fr 3fr 2fr;
-      }
+  .set-time {
+    flex-direction: column;
+    margin-top: 100px;
+  }
 
-      select {
-        width: 120px;
-      }
+  .dynamic-img-block {
+    align-items: center;
+    margin-top: 50px;
+  }
 
-      .final-schedule {
-        width: 356px;
-      }
-      
+  .dynamic-img {
+    width: 346px;
+    height: 364px;
+  }
+
+  .mySchedule {
+    width: 400px;
+  }
+
+  .set-schedules {
+    width: 356px;
+  }
+
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 45px);
+    padding: 30px 30px 30px 30px;
+    row-gap: 40px;
+    color: #3d087b;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+
+  .schedule-grid div {
+    grid-template-columns: 1fr 3fr 2fr;
+  }
+
+  select {
+    width: 120px;
+  }
+
+  .final-schedule {
+    width: 356px;
+  }
 }
