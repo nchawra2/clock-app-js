@@ -46,8 +46,8 @@ let getTime = () => {
     }
 
     document.getElementById('hr').innerText = `${hr}`;
-    document.getElementById('min').innerText = `${min > 9 ? min : '0' + min}`;
-    document.getElementById('sec').innerText = `${sec > 9 ? sec : '0' + sec}`;
+    document.getElementById('min').innerText = `${min}`;
+    document.getElementById('sec').innerText = `${sec}`;
 }
 
 // CALLING getTime() EVERY SECOND
@@ -73,7 +73,6 @@ document.getElementById('nap-time').addEventListener('change', () => {
 
 
 // AFTER USER CLIKE SET TIME BUTTON - SHOW THE HIDDEN SCHEDULE BOX
-let after_click = () => {
     document.getElementsByClassName('set-time-btn')[0].addEventListener('click', () => {
         if(wake_up_time && lunch_time && nap_time){
         document.querySelector('.final-schedule').classList.remove('hidden');
@@ -103,8 +102,6 @@ let after_click = () => {
         }else if(hr_and_phase == hr_napTime){
             document.getElementById('d-img').style.background =' white url("./img/goodnight_image.svg")';
             document.getElementById('img-text').textContent = ' good night!! ';
-        }else {
-            setInterval(after_click,1000);
         }
     
         }else {
@@ -112,6 +109,3 @@ let after_click = () => {
         }
     
     });
-}
-
-after_click();
